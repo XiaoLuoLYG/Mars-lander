@@ -1,0 +1,67 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>218f7c56-467e-448e-aa12-f9b971d85469</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>graph drawing assignment 5.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda37-64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="assignment 2 straightdown verlet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="assignment2 circular orbit verlet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="assignment2 elliptical euler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="assignment2 elliptical verlet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="assignment2 hyperbolic escape euler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="assignment2 hyperbolic verlet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assignment2 straight down euler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="assignment2 circular orbit euler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="graph drawing assignment 5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="spring.py" />
+    <Compile Include="Verlet integration.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda37-64" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
